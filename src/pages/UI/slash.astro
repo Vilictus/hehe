@@ -1,7 +1,18 @@
 ---
+export interface Props {
+  hidden: boolean | false;
+}
+
+const { hidden } = Astro.props;
+
+const res = await fetch("/api/status").then((res) => res.json());
+console.log(res);
 ---
 
-<main class={`full-screen bg-indigo-500 flex-center font-PP font-extrabold text-black text-xl relative ${!!Astro.props.hidden && "!hidden"}`}>
-	  Daku Softworks
+<main
+  class={`full-screen bg-indigo-500 flex-center font-PP font-extrabold text-black text-xl relative ${
+    hidden && "!hidden"
+  }`}
+>
+  Daku Softworks
 </main>
-
