@@ -1,4 +1,6 @@
 ---
+import Layout from "#layouts/Layout.astro"
+
 import Button from '#components/Button.astro';
 import Error from "#pages/Errors/no-wifi.astro"
 import Banned from "#pages/Errors/banned.astro"
@@ -7,39 +9,6 @@ const actualVersion = "23.0.4"
 import '#styles/main.css'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Daku Dev</title>
+<Layout>
+Hola</Layout>
 		
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-	</head>
-
-	<body>
-	
-   <!--///// Slash Screen  /////-->
-
-  <main class='full-screen bg-red-500 flex-center font-PP font-extrabold text-black text-xl '>
-	  Daku Softworks
-	</main>
-
-	<!--///// Updating Screen  /////-->
-
-  <main id="updatingScreen" class="flex gap-4 justify-center flex-col items-center full-screen !hidden">
-	   <h1 class="font-bold font-PP text-2xl text-center">Software Update</h1>
-
-
-	   <small class="absolute bottom-7 font-MT text-zinc-600">Version: <b>{actualVersion}</b></small>
-	  <progress class="max-h-1" id="file" max="100" value="80"> 70% </progress>
-	</main>
-
-	 
-  
-	
-	</body>
-</html>
