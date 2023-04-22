@@ -1,9 +1,7 @@
 ---
-	const {hiddenthis} = Astro.props;
-	const hidden = '!hidden'
 ---
 
-<main class={`full-screen bg-red-500 flex-center font-PP font-extrabold text-black text-xl ${!!hiddenthis && hidden}`}>
+<main class={`full-screen bg-red-500 flex-center font-PP font-extrabold text-black text-xl ${!!Astro.props.hidden && "!hidden"}`}>
 	  Daku Softworks
 </main>
 
