@@ -6,8 +6,9 @@
       "#pages/*": ["src/pages/*"],
       "#styles/*": ["src/styles/*"],
       "#layouts/*": ["src/layouts/*"],
+      "#UI/*": ["src/pages/UI/*"],
       "#errors/*": ["src/pages/errors/*"],
-      "#components/*": ["src/components/*"],
+      "#components/*": ["src/components/*"]
     }
   }
 }
