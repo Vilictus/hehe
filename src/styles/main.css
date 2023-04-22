@@ -6,9 +6,14 @@
   --main-color: rgb(115, 122, 230);
 }
 
+.mainBg {
+  background-color: var(--main-color);
+}
+
 .mainColor {
   color: var(--main-color);
 }
+
 .full-screen {
   min-height: 100vh;
   min-width: 100%;
