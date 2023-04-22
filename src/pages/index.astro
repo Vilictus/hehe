@@ -29,24 +29,21 @@ import '#styles/main.css'
 	
    <!--///// Slash Sreen  /////-->
 
-  <main class='full-screen bg-indigo-600 flex-center font-PP font-extrabold text-black text-xl !hidden'>
+  <main class='full-screen bg-indigo-600 flex-center font-PP font-extrabold text-black text-xl '>
 	  Pulse Softworks
 	</main>
-
-		<!--///// ERROR  /////-->
-
-    <DevMode />
-		
 
 	<!--///// Updating Screen  /////-->
 
   <main id="updatingScreen" class="flex gap-4 justify-center flex-col items-center full-screen !hidden">
 	   <h1 class="font-bold font-PP text-2xl text-center">Software Update</h1>
 
-     <progress class="max-h-1" id="file" max="100" value="80"> 70% </progress>
+
+	   <small class="absolute bottom-7 font-MT text-zinc-600">Version: <b>{actualVersion}</b></small>
+	  <progress class="max-h-1" id="file" max="100" value="80"> 70% </progress>
 	</main>
 
-	  <small class="absolute bottom-7 font-MT text-zinc-600">Version: <b>{actualVersion}</b></small>
+	 
   
 	
 	</body>
