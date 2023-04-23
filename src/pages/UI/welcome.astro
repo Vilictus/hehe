@@ -1,4 +1,6 @@
 ---
+Import {Navigation} from '#UI/Navigation.astro'
+
 export interface Props {
   hidden: boolean | false;
 }
@@ -15,8 +17,11 @@ const { hidden } = Astro.props;
 <svg id='logo' width="40" height="48" viewBox="0 0 48 48" class="svg-2ifYOU" overflow="visible"><defs><path d="M0 24C0 16.5449 0 12.8174 1.21793 9.87706C2.84183 5.95662 5.95662 2.84183 9.87706 1.21793C12.8174 0 16.5449 0 24 0C31.4551 0 35.1826 0 38.1229 1.21793C42.0434 2.84183 45.1582 5.95662 46.7821 9.87706C48 12.8174 48 16.5449 48 24C48 31.4551 48 35.1826 46.7821 38.1229C45.1582 42.0434 42.0434 45.1582 38.1229 46.7821C35.1826 48 31.4551 48 24 48C16.5449 48 12.8174 48 9.87706 46.7821C5.95662 45.1582 2.84183 42.0434 1.21793 38.1229C0 35.1826 0 31.4551 0 24Z" id="beaf9486-6031-4117-95ca-e146b4e1f0d8-blob_mask"></path></defs><mask id="beaf9486-6031-4117-95ca-e146b4e1f0d8" fill="black" x="0" y="0" width="48" height="48"><use href="#beaf9486-6031-4117-95ca-e146b4e1f0d8-blob_mask" fill="white"></use></mask><foreignObject mask="url(#beaf9486-6031-4117-95ca-e146b4e1f0d8)" x="0" y="0" width="48" height="48"><div class="wrapper-3kah-n selected-1Drb7Z" role="treeitem" data-list-item-id="guildsnav___1030675335328575559" tabindex="-1" aria-label="  Kuda Development 🚀"><img class="icon-3AqZ2e" src="https://cdn.discordapp.com/icons/1030675335328575559/91c73c189df3497f047d7aec1f669719.webp?size=240" alt=" " width="48" height="48" aria-hidden="true"></div></foreignObject></svg>
 </div>
 
-<h1 class='font-bold text-2xl mt-5 text-zinc-100/90'>Getting to know each other</h1>
-<section class='mt-5'>
-  <input type="text" placeholder='Username' class='w-full bg-transparent border-[1.3px] rounded-md border-neutral-700 p-2.5 pl-4 text-xs font-MT placeholder-neutral-500 outline-none'>
+<h1 class='font-bold text-2xl mt-5 text-zinc-100/90'>Welcome to Daku:</h1>
+<section class='mt-5 flex flex-col gap-3 w-[80%] text-xs'>
+  <input type="text" placeholder='Username' class=' bg-transparent border-[1.3px] rounded-md border-neutral-700 p-2.5 pl-4  font-MT placeholder-neutral-500 outline-none'>
+   <input type="password" placeholder='Password' class='bg-transparent border-[1.3px] rounded-md border-neutral-700 p-2.5 pl-4 font-MT placeholder-neutral-500 outline-none'>
+   <button class='bg-purple-600 font-semibold text-black p-2.5 rounded-md'>Continue</button>
 </section>
+ <h4 class='mt-6 text-sm text-neutral-400 font-MT font-medium'>I agree with <a class='mainColo' href="">Terms and Conditions</a> of Daku Softworks.</h4>
 </main>
