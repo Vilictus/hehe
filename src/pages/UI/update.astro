@@ -6,11 +6,12 @@ export interface Props {
 const { hidden } = Astro.props
 ---
 
-<main
-  class={`full-screen text-gray-200 flex-center font-PP font-extrabold text-black text-xl relative ${
-    !!hidden && "!hidden"
-  }`}
->
-  Daku Softworks
+<main class={`full-screen text-gray-200 flex-center font-PP gap-4 font-extrabold text-black text-xl relative flex-col ${!!hidden && "!hidden"}`}>
+
+  Software Update
+
+  <progress class="max-h-1" id="file" max="100" value="80"> 70% </progress>
+
+	  <small class="absolute bottom-7 font-PP font-medium text-[12px] text-zinc-600">Version: <b class='mainColor'>v23.2.4</b></small>
   
 </main>
