@@ -6,7 +6,7 @@ export interface Props {
 const { hidden } = Astro.props
 ---
 
-<main class={`full-screen text-gray-200 flex-center font-PP gap-4 font-extrabold text-black text-xl relative flex-col !hidden ${!!hidden && "!hidden"}`}>
+<main class={`full-screen text-gray-200 flex-center font-PP gap-4 font-extrabold text-black text-xl relative flex-col ${!!hidden && "!hidden"}`}>
 
   Software Update
 
