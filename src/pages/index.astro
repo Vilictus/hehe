@@ -7,7 +7,7 @@ import SlashScreen from "#UI/slash.astro"
 import UpdateScreen from "#UI/update.astro"
 import WelcomeUI from "#UI/welcome.astro"
 
-const res = await fetch("http://localhost:3000/api/status")
+const res = await fetch("https://daku-dev.vercel.app/api/status")
   .then((res) => res.text())
   .catch(console.log);
 ---
