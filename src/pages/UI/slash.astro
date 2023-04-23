@@ -4,11 +4,6 @@ export interface Props {
 }
 
 const { hidden } = Astro.props;
-
-const res = await fetch("http://localhost:3000/api/status")
-  .then((res) => res.json())
-  .catch(console.log);
-console.log(res);
 ---
 
 <main

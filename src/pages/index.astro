@@ -1,18 +1,20 @@
 ---
 // ===== General Layout ====== //
+import fetch from 'node-fetch';
 import Layout from "#layouts/Layout.astro"
 // ===== Imports ====== //
 import SlashScreen from "#UI/slash.astro"
 import UpdateScreen from "#UI/update.astro"
 import WelcomeUI from "#UI/welcome.astro"
 
+const res = await fetch("http://localhost:3000/api/status")
+  .then((res) => res.text())
+  .catch(console.log);
 ---
 
 <Layout>
 
-<SlashScreen hidden/>
-<UpdateScreen hidden/>
-<WelcomeUI />
+  { !res.updated ? <UpdateScreen/> : <SlashScreen /> }
+  <WelcomeUI />
 
 </Layout>
-		
