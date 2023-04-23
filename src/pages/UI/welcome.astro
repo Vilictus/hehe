@@ -1,5 +1,5 @@
 ---
-Import {Navigation} from '#UI/Navigation.astro'
+import Navigation from '#UI/Navigation.astro'
 
 export interface Props {
   hidden: boolean | false;
@@ -11,6 +11,7 @@ const { hidden } = Astro.props;
 <main id='WelcomeUI'
   class={`full-screen w-[100%] font-PP  relative p-10 px-12 flex-col ${!!hidden && "!hidden" }`}>
 
+<Navigation />
 
 <div>
 
