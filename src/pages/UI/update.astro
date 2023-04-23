@@ -1,0 +1,16 @@
+---
+export interface Props {
+  hidden: boolean | false;
+}
+
+const { hidden } = Astro.props
+---
+
+<main
+  class={`full-screen text-gray-200 flex-center font-PP font-extrabold text-black text-xl relative ${
+    !!hidden && "!hidden"
+  }`}
+>
+  Daku Softworks
+  
+</main>
