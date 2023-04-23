@@ -35,11 +35,13 @@ html {
 }
 
 progress[value]::-webkit-progress-bar {
+  transition: width 5s ease;
   background-color: #202020;
   border-radius: 40px;
 }
 
 progress[value]::-webkit-progress-value {
+  transition: width 5s ease;
   border-radius: 40px;
   background-color: var(--main-color);
 }

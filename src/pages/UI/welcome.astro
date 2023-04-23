@@ -1,0 +1,13 @@
+---
+export interface Props {
+  hidden: boolean | false;
+}
+
+const { hidden } = Astro.props;
+---
+
+<main id='WelcomeUI'
+  class={`full-screen w-[100%] text-zinc-200 flex-center font-PP font-extrabold text-black text-xl relative flex-col ${!!hidden && "!hidden" }`}>
+ Testing data.
+
+</main>
