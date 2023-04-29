@@ -54,3 +54,10 @@ input {
   outline: none;
   caret-color: var(--main-color);
 }
+
+#MainUi {
+  border: 1px solid #eee;
+  border-style: dotted;
+  width: 550px;
+  height: 350px;
+}
