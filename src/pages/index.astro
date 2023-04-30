@@ -5,7 +5,6 @@ import Layout from "#layouts/Layout.astro"
 // ===== Imports ====== //
 import SlashScreen from "#UI/slash.astro"
 import UpdateScreen from "#UI/update.astro"
-import WelcomeUI from "#UI/welcome.astro"
 import MainUI from "#MainUI/Main.astro"
 
 const res = await fetch("https://daku-dev.vercel.app/api/status")
@@ -19,5 +18,5 @@ const res = await fetch("https://daku-dev.vercel.app/api/status")
      { !res.updated ? <UpdateScreen/> : <SlashScreen /> }
      <MainUI />
   </main>
-  
+
 </Layout>
