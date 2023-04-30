@@ -6,6 +6,12 @@
   --main-color: rgb(115, 122, 230);
 }
 
+.flex-around {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .mainBg {
   background-color: var(--main-color);
 }
@@ -56,8 +62,9 @@ input {
 }
 
 #MainUi {
-  border: 1px solid #eee;
-  border-style: dotted;
+  border: 0.5px solid #3b3b3b;
   width: 550px;
   height: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1)
 }

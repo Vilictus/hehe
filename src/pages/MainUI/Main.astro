@@ -2,15 +2,15 @@
   import Introduction from '#MainUI/Introduction.astro'
 ---
 
-<main id='MainUi' class='flex'>
-  <section class='w-[25%] min-h-full p-3 px-7 bg-[#151517]'>
+<main id='MainUi' class='flex overflow-hidden'>
+  <section class='w-[25%]  min-h-full p-3 px-7 bg-[#151517]'>
     <div id='controlButtons'>
        <button class='h-2.5 w-2.5 rounded-full bg-indigo-500'></button>
         <button class='h-2.5 w-2.5 rounded-full bg-neutral-800'></button>
     </div>
   </section>
 
-  <section>
+  <section class='w-full p-6 px-10'>
     <Introduction />
   </section>
 </main>
